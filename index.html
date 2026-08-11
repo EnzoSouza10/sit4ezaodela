@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#120817" />
+    <meta name="description" content="Um cantinho romântico, tecido especialmente para você." />
+    <title>Júlia & Eu — Nosso Primeiro Mês</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="stars" aria-hidden="true"></canvas>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="hero" id="inicio">
+      <nav class="nav" aria-label="Navegação principal">
+        <a class="brand" href="#inicio" aria-label="Ir ao início">nós<span>∞</span></a>
+        <button class="menu-button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#carta">Carta</a>
+          <a href="#constelacao">Nós</a>
+          <a href="#promessa">Promessa</a>
+        </div>
+      </nav>
+
+      <div class="web web-left" aria-hidden="true"></div>
+      <div class="web web-right" aria-hidden="true"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">para júlia, meu lugar favorito</p>
+        <h1>Meu coração<br /><em>teceu</em> seu nome, Júlia.</h1>
+        <p class="hero-copy">Desde 20 de julho, cada dia tem sido mais bonito porque tem um pedacinho de você nele.</p>
+        <div class="anniversary" aria-label="Contagem regressiva para nosso primeiro mês">
+          <span class="anniversary-mark">♥</span>
+          <div class="countdown" aria-live="polite">
+            <div><strong id="countdown-days">--</strong><small>dias</small></div>
+            <b>:</b>
+            <div><strong id="countdown-hours">--</strong><small>horas</small></div>
+            <b>:</b>
+            <div><strong id="countdown-minutes">--</strong><small>min</small></div>
+            <b>:</b>
+            <div><strong id="countdown-seconds">--</strong><small>seg</small></div>
+          </div>
+          <span class="anniversary-date">20<br /><i>ago</i></span>
+        </div>
+        <p class="countdown-caption">para o nosso primeiro mês juntos</p>
+        <a class="button" href="#carta">Descubra o que guardei <span>↓</span></a>
+      </div>
+      <div class="hanging-spider" aria-hidden="true">
+        <i class="thread"></i><i class="spider-body"></i>
+      </div>
+      <p class="scroll-hint">deslize para sentir <span></span></p>
+    </header>
+
+    <main>
+      <section class="letter section" id="carta">
+        <div class="section-label reveal"><span></span> minha carta para você</div>
+        <div class="letter-grid">
+          <div class="letter-art reveal" aria-hidden="true">
+            <div class="moon"></div>
+            <div class="small-web"></div>
+            <div class="violet-orb orb-one"></div><div class="violet-orb orb-two"></div>
+          </div>
+          <article class="letter-card reveal">
+            <p class="letter-kicker">Para a minha incrível Júlia,</p>
+            <h2>Você chegou e fez o meu mundo se sentir bem.</h2>
+            <p>Em tão pouco tempo, você já transformou tantos momentos. Desde 20 de julho, eu descobri em você um sorriso que acalma, uma presença que abraça e uma pessoa incrível que eu tenho a sorte de chamar de minha.</p>
+            <p>Você me faz sentir bem de um jeito leve e verdadeiro. Quero colecionar os seus risos, estar ao seu lado nos dias difíceis e continuar construindo, fio por fio, uma história bonita com você.</p>
+            <p class="signature">com carinho imenso,<br /><strong>Enzo.</strong></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="constellation section" id="constelacao">
+        <div class="section-label reveal"><span></span> nossa constelação</div>
+        <div class="constellation-intro reveal">
+          <h2>Pequenos fios.<br /><em>Um amor imenso.</em></h2>
+          <p>Toque em cada estrela: elas guardam coisas que eu adoro em você.</p>
+        </div>
+        <div class="memory-web reveal" role="group" aria-label="Qualidades especiais">
+          <svg viewBox="0 0 700 430" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+            <path d="M350 215 L105 70 M350 215 L580 80 M350 215 L640 260 M350 215 L515 375 M350 215 L190 370 M350 215 L55 265 M105 70 L190 370 M105 70 L580 80 M580 80 L640 260 M640 260 L515 375 M515 375 L190 370 M190 370 L55 265 M55 265 L105 70" />
+            <path d="M350 215 L250 130 L105 70 M350 215 L450 135 L580 80 M350 215 L485 230 L640 260 M350 215 L425 305 L515 375 M350 215 L270 305 L190 370 M350 215 L215 235 L55 265" />
+          </svg>
+          <button class="memory memory-1" data-title="Seu sorriso" data-message="Ele me faz sentir bem e ilumina até os dias mais comuns.">✦</button>
+          <button class="memory memory-2" data-title="Seu jeito" data-message="Júlia, a sua delicadeza é uma das coisas mais bonitas que eu conheço.">✦</button>
+          <button class="memory memory-3" data-title="Sua força" data-message="Você é incrível — e eu admiro a coragem que existe em você.">✦</button>
+          <button class="memory memory-4" data-title="Nossa sintonia" data-message="Em só um mês, você já fez o meu mundo parecer mais leve.">✦</button>
+          <button class="memory memory-5" data-title="Seu abraço" data-message="O meu lugar seguro tem a exata forma dos seus braços.">✦</button>
+          <button class="memory memory-6" data-title="Você, Júlia" data-message="A minha escolha favorita, hoje, no dia 20 e em todos os outros dias.">✦</button>
+          <div class="memory-message" aria-live="polite"><strong>Toque em uma estrela</strong><span>e descubra um pedacinho do meu amor.</span></div>
+        </div>
+      </section>
+
+      <section class="promise section" id="promessa">
+        <div class="promise-content reveal">
+          <div class="tiny-spider" aria-hidden="true"><i></i></div>
+          <p class="eyebrow">uma promessa</p>
+          <h2>Em todas as versões do amanhã,<br /><em>eu escolheria você.</em></h2>
+          <p>Que o nosso primeiro mês seja apenas o começo de muitos dias leves, abraços apertados e histórias que só nós entendemos.</p>
+          <button class="button button-light" id="heart-button">Uma surpresa <span>♡</span></button>
+        </div>
+      </section>
+    </main>
+
+    <footer><span>20.07 — nosso começo</span><span class="footer-heart">♥</span><span>Júlia & Enzo</span></footer>
+    <div class="modal" id="love-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-card">
+        <button class="close-modal" aria-label="Fechar">×</button>
+        <div class="modal-web" aria-hidden="true"></div>
+        <p class="eyebrow">para você</p>
+        <h2 id="modal-title">Júlia, meu lugar favorito<br />sempre será <em>ao seu lado.</em></h2>
+        <p>Obrigado por existir, por ser tão incrível e por me fazer sentir tão bem. Feliz primeiro mês — que seja o primeiro de muitos capítulos nossos.</p>
+        <span class="modal-heart">♥</span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
